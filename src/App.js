@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import mainPage from "./pages/MainPage";
+import MainPage from "./pages/MainPage";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
@@ -8,10 +8,10 @@ import Wrapper from "./components/Wrapper";
 function App() {
   return (
     <Router>
-      <div className="_component" data-name="app">
+      <div>
         <Wrapper>
-          <Route exact path="/" component={mainPage} />
-        </Wrapper>
+          <Route exact path="/" component={MainPage}/>
+          </Wrapper>
         <Footer />
       </div>
     </Router>
