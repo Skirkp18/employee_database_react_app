@@ -3,8 +3,8 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <span>Pupster 2017</span>
+    <footer className="footer" style={{textAlign:"center"}}>
+      <span>Sean Kirkpatrick 2020</span>
     </footer>
   );
 }
