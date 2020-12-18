@@ -1,10 +1,10 @@
 import TitleAndDescriptionCard from "../components/TitleAndDescriptionCard/TitleAndDescriptionCard";
-import UserCard from "../components/UserCard/UserCard";
+import UserCardContainer from "../components/UserCardContainer/UserCardContainer";
 
 function MainPage() {
     return( <div>
-    <TitleAndDescriptionCard></TitleAndDescriptionCard>
-    <UserCard></UserCard>
+    <TitleAndDescriptionCard />
+    <UserCardContainer />
     </div>
     );
     
