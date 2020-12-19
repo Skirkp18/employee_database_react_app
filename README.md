@@ -4,7 +4,7 @@
 
 <img src="/public/appImage.png">
 <br></br>
-<a src="https://skirkp18.github.io/employee_database_react_app/">Click Here For The Deployed Application!</a>
+<a href="https://skirkp18.github.io/employee_database_react_app/">Click Here For The Deployed Application!</a>
 
 ## Description
 This is an app that uses React and React state to show a list of users or employees in a directory. There are three buttons that filter or sort data by either age or gender respectivly. test 
