@@ -4,6 +4,9 @@ import API from "../../utils/API";
 import AgeBtn from "../AgeBtn/AgeBtn";
 import MalesBtn from "../FilterByMalesBtn/FilterByMalesBtn"
 import FemalesBtn from "../FilterByFemalesBtn/FilterByFemalesBtn"
+import Container from "../Container/index"
+import Row from "../Row/index"
+import Col from "../Col/index"
 
 
 class UserCardContainer extends Component {
@@ -49,12 +52,24 @@ class UserCardContainer extends Component {
     }
     return (
       <div>
-        <div>
-        <AgeBtn ageBtnClick={this.ageBtnClick}></AgeBtn>
-        <MalesBtn filterMales={this.showMales}></MalesBtn>
-        <FemalesBtn filterFemales={this.showFemales}></FemalesBtn>
-        </div>
-        <UserTable results={this.state.results} sort={this.state.sort}></UserTable>
+        <Container>
+        <Row>
+          <Col size={"md-4"}>
+          <AgeBtn ageBtnClick={this.ageBtnClick}></AgeBtn>
+          </Col>
+          <Col size={"md-4"}>
+          <MalesBtn filterMales={this.showMales}></MalesBtn>
+          </Col>
+          <Col size={"md-4"}>
+          <FemalesBtn filterFemales={this.showFemales}></FemalesBtn>
+          </Col>
+        </Row>
+        <Row>
+          <Col size={"md-12"}>
+          <UserTable results={this.state.results} sort={this.state.sort}></UserTable>
+          </Col>
+        </Row>
+        </Container>
       </div>
       );
   }
