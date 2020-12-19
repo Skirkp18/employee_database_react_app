@@ -8,7 +8,7 @@ class UserCardContainer extends Component {
 
   state = {
     results: [],
-    sort: "male"
+    sort: "female"
   };
 
   componentDidMount() {

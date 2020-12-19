@@ -69,7 +69,40 @@ function UserTable({ results, sort }) {
 
 
     } else if (sort === "female") {
-        console.log("Sort By Female Goes Here!")
+        usersArray = usersArray.filter((obj) => {
+            return obj.gender === "female"})
+        console.log(usersArray);
+
+        const tableItems = [];
+
+        for (let i = 0; i < usersArray.length; i++) {
+
+           const name = usersArray[i].name;
+           const gender = usersArray[i].gender;
+           const age = usersArray[i].age;
+           const email = usersArray[i].email;
+
+            tableItems.push(<tr key={i}><th>{i}</th><th>{name}</th><th>{gender}</th><th>{age}</th><th>{email}</th></tr>)
+        }
+
+        console.log(tableItems);
+
+        return (<div>
+         <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+            {tableItems}           
+        </tbody>
+        </Table>
+        </div>)
     } 
 
     return ( <div>
