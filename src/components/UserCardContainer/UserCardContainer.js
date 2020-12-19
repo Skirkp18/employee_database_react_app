@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import UserTable from "../UserTable/UserTable";
 import API from "../../utils/API";
+import AgeBtn from "../AgeBtn/AgeBtn";
 
 
 class UserCardContainer extends Component {
 
   state = {
-    results: []
+    results: [],
+    sort: "male"
   };
 
   componentDidMount() {
@@ -15,12 +17,20 @@ class UserCardContainer extends Component {
 
   getUsers = () => {
     API.search()
-      .then(res => this.setState({ results: res.data.results }))
+      .then((res) => {this.setState({ results: res.data.results })})
       .catch(err => console.log(err))
   };
 
-  handleBtnClick = event => {
-    console.log("click");
+  ageBtnClick = event => {
+    console.log("Sort By Age (Young To Old)!");
+    // console.log(this.state.results[0].dob.age)
+    for (let i = 0; i < this.state.results.length; i++) {
+        
+    }
+  };
+
+  filterByGender = event => {
+    console.log("Filter By Gender!")
   }
 
   render() {
@@ -34,7 +44,8 @@ class UserCardContainer extends Component {
     }
     return (
       <div>
-        <UserTable results={this.state.results}></UserTable>
+        <AgeBtn ageBtnClick={this.ageBtnClick}></AgeBtn>
+        <UserTable results={this.state.results} sort={this.state.sort}></UserTable>
       </div>
       );
   }
