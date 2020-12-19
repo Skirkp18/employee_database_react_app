@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import UserTable from "../UserTable/UserTable";
 import API from "../../utils/API";
 import AgeBtn from "../AgeBtn/AgeBtn";
+import MalesBtn from "../FilterByMalesBtn/FilterByMalesBtn"
+import FemalesBtn from "../FilterByFemalesBtn/FilterByFemalesBtn"
 
 
 class UserCardContainer extends Component {
 
   state = {
     results: [],
-    sort: "female"
+    sort: "main"
   };
 
   componentDidMount() {
@@ -23,14 +25,17 @@ class UserCardContainer extends Component {
 
   ageBtnClick = event => {
     console.log("Sort By Age (Young To Old)!");
-    // console.log(this.state.results[0].dob.age)
-    for (let i = 0; i < this.state.results.length; i++) {
-        
-    }
+    this.setState({ sort: "age" });
   };
 
-  filterByGender = event => {
-    console.log("Filter By Gender!")
+  showMales = event => {
+    console.log("Filter By Males!")
+    this.setState({ sort: "male" })
+  }
+
+  showFemales = event => {
+    console.log("Filter By Females")
+    this.setState({ sort: "female" })
   }
 
   render() {
@@ -44,7 +49,11 @@ class UserCardContainer extends Component {
     }
     return (
       <div>
+        <div>
         <AgeBtn ageBtnClick={this.ageBtnClick}></AgeBtn>
+        <MalesBtn filterMales={this.showMales}></MalesBtn>
+        <FemalesBtn filterFemales={this.showFemales}></FemalesBtn>
+        </div>
         <UserTable results={this.state.results} sort={this.state.sort}></UserTable>
       </div>
       );

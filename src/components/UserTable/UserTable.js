@@ -6,6 +6,8 @@ function UserTable({ results, sort }) {
 
     console.log(results);
 
+    const tableItems = [];
+
     let usersArray = [];
 
     
@@ -105,6 +107,17 @@ function UserTable({ results, sort }) {
         </div>)
     } 
 
+
+        for (let i = 0; i < usersArray.length; i++) {
+
+           const name = usersArray[i].name;
+           const gender = usersArray[i].gender;
+           const age = usersArray[i].age;
+           const email = usersArray[i].email;
+
+            tableItems.push(<tr key={i}><th>{i}</th><th>{name}</th><th>{gender}</th><th>{age}</th><th>{email}</th></tr>)
+        }
+
     return ( <div>
         <Table striped bordered hover>
         <thead>
@@ -117,76 +130,7 @@ function UserTable({ results, sort }) {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>{usersArray[0].name}</td>
-            <td>{usersArray[0].gender}</td>
-            <td>{usersArray[0].age}</td>
-            <td>{usersArray[0].email}</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>{usersArray[1].name}</td>
-            <td>{usersArray[1].gender}</td>
-            <td>{usersArray[1].age}</td>
-            <td>{usersArray[1].email}</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>{usersArray[2].name}</td>
-            <td>{usersArray[2].gender}</td>
-            <td>{usersArray[2].age}</td>
-            <td>{usersArray[2].email}</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>{usersArray[3].name}</td>
-            <td>{usersArray[3].gender}</td>
-            <td>{usersArray[3].age}</td>
-            <td>{usersArray[3].email}</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>{usersArray[4].name}</td>
-            <td>{usersArray[4].gender}</td>
-            <td>{usersArray[4].age}</td>
-            <td>{usersArray[4].email}</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>{usersArray[5].name}</td>
-            <td>{usersArray[5].gender}</td>
-            <td>{usersArray[5].age}</td>
-            <td>{usersArray[5].email}</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>{usersArray[6].name}</td>
-            <td>{usersArray[6].gender}</td>
-            <td>{usersArray[6].age}</td>
-            <td>{usersArray[6].email}</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>{usersArray[7].name}</td>
-            <td>{usersArray[7].gender}</td>
-            <td>{usersArray[7].age}</td>
-            <td>{usersArray[7].email}</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>{usersArray[8].name}</td>
-            <td>{usersArray[8].gender}</td>
-            <td>{usersArray[8].age}</td>
-            <td>{usersArray[8].email}</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>{usersArray[9].name}</td>
-            <td>{usersArray[9].gender}</td>
-            <td>{usersArray[9].age}</td>
-            <td>{usersArray[9].email}</td>
-          </tr>
+        {tableItems}
         </tbody>
       </Table>
       </div>
