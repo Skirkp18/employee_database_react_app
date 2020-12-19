@@ -2,6 +2,9 @@
 
 ![GitHub](https://img.shields.io/github/downloads/Skirkp18/employee_database_react_app/total) ![GitHub](https://img.shields.io/github/languages/top/Skirkp18/employee_database_react_app) ![GitHub](https://img.shields.io/badge/license-MIT-green?style=flat) 
 
+<img src="/public/appImage.png">
+<br></br>
+<a src="https://skirkp18.github.io/employee_database_react_app/">Click Here For The Deployed Application!</a>
 ## Description
 This is an app that uses React and React state to show a list of users or employees in a directory. There are three buttons that filter or sort data by either age or gender respectivly. test 
 ## Table of Contents 
