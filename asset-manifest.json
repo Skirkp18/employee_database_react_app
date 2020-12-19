@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.6c9cd375.chunk.css",
-    "main.js": "/my-app/static/js/main.1d32361f.chunk.js",
-    "main.js.map": "/my-app/static/js/main.1d32361f.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.15de1ff6.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.15de1ff6.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/my-app/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.6bb86231.chunk.js": "/my-app/static/js/2.6bb86231.chunk.js",
-    "static/js/2.6bb86231.chunk.js.map": "/my-app/static/js/2.6bb86231.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/my-app/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.6c9cd375.chunk.css.map": "/my-app/static/css/main.6c9cd375.chunk.css.map",
-    "static/js/2.6bb86231.chunk.js.LICENSE.txt": "/my-app/static/js/2.6bb86231.chunk.js.LICENSE.txt"
+    "main.css": "/Skirkp18/employee_database_react_app/static/css/main.6c9cd375.chunk.css",
+    "main.js": "/Skirkp18/employee_database_react_app/static/js/main.1d32361f.chunk.js",
+    "main.js.map": "/Skirkp18/employee_database_react_app/static/js/main.1d32361f.chunk.js.map",
+    "runtime-main.js": "/Skirkp18/employee_database_react_app/static/js/runtime-main.8558c28c.js",
+    "runtime-main.js.map": "/Skirkp18/employee_database_react_app/static/js/runtime-main.8558c28c.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/Skirkp18/employee_database_react_app/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.6bb86231.chunk.js": "/Skirkp18/employee_database_react_app/static/js/2.6bb86231.chunk.js",
+    "static/js/2.6bb86231.chunk.js.map": "/Skirkp18/employee_database_react_app/static/js/2.6bb86231.chunk.js.map",
+    "index.html": "/Skirkp18/employee_database_react_app/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/Skirkp18/employee_database_react_app/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.6c9cd375.chunk.css.map": "/Skirkp18/employee_database_react_app/static/css/main.6c9cd375.chunk.css.map",
+    "static/js/2.6bb86231.chunk.js.LICENSE.txt": "/Skirkp18/employee_database_react_app/static/js/2.6bb86231.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.15de1ff6.js",
+    "static/js/runtime-main.8558c28c.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.6bb86231.chunk.js",
     "static/css/main.6c9cd375.chunk.css",
